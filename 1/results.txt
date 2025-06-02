@@ -1,0 +1,45 @@
+NewSQL (e.g., CockroachDB, Google Spanner)
+✅ Strengths:
+
+SQL-like features with distributed scalability
+
+Strong consistency, horizontal scaling
+
+⚠️ Weaknesses:
+
+Newer tech, not as mature or supported as classic RDBMS
+
+Higher operational complexity
+
+🔁 Fit: Good — combines RDBMS with scalability, but more complex to manage.
+
+3. Trade-offs Comparison Table
+Database Type	Read/Write Balance	Relationship Modeling	Scalability	Complexity	Fit Summary
+Relational (e.g., PostgreSQL)	⚖️ Balanced	👍 Good (joins)	⚠️ Moderate	✅ Low	Profiles/posts only
+Document Store (MongoDB)	✅ Read-optimized	⚠️ Weak (joins)	✅ High	✅ Medium	Good all-around
+Wide-Column (Cassandra)	✅ Excellent reads	❌ Poor	✅ Excellent	⚠️ High	Good for feeds, poor for relationships
+Graph (Neo4j)	⚠️ Moderate	✅ Excellent	⚠️ Moderate	✅ Low	Best for connections
+NewSQL	✅ Balanced	👍 Good	✅ High	⚠️ High	Balanced but complex
+
+4. Recommendation: Best-Fit Database Type
+✅ Best Fit: MongoDB (Document Store)
+Why MongoDB?
+Flexible Schema: Easily models user profiles and posts with varying structures.
+
+High Read Speed: Built-in indexing and read optimization suit your 80/20 access pattern.
+
+Horizontal Scalability: Scales well with sharding as user base grows.
+
+Document Modeling: Supports nested documents (e.g., posts within users) for efficient reads.
+
+Adequate Relationship Support: While not as good as a graph DB, it can handle light relationship queries via references and data duplication.
+
+📌 Bonus: For complex social graphs (friends/followers), you can pair MongoDB with a graph engine like Neo4j or RedisGraph selectively—only where necessary.
+
+Summary
+Feature	MongoDB
+Scalability	✅ Horizontal, sharded
+Read performance	✅ High, with indexing
+Write performance	✅ Good for 20% writes
+Relationship support	⚠️ Moderate, manageable with careful modeling
+Overall fit	✅ Best compromise across all requirements
