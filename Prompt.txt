@@ -1,0 +1,14 @@
+Project requirements:
+I need to select a database for a new  application.
+Here are quirements:
+-Social platform with millions of users
+-Need to store profiles, posts, and connections between users
+-High data read speed required
+-Expected 80% read operations, 20% write operations
+-Scalability is important as the user base grows
+
+Instructions:
+1.Please, analyze reqiuirements and describe challenges and needs of each requirement for data dases.
+2.Consider the common database types  and evaluate how each fits the requirements.
+3.Highlight trade-offs such as read/write performance, complexity of data relationships, and scalability.
+4.Conclude with the database type (one) that best fits the overall needs, explaining why it is the best fit.
