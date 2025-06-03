@@ -1,0 +1,12 @@
+"Logout button doesn’t work on Safari. It just doesn’t respond."
+This is a bug I am Mid QA
+1.The problem is that the button log out doesn' ot work on Safari, it does not respond
+2.Create a clear, well-structured bug ticket
+3.Here the structure of bug report
+Title-short and informative title of a bug
+Description-detaild description of a bug, including what doesn't work
+Steps to Reproduce-instruction by steps how to reproducea a problem
+Expected vs Actual Behavior-what happens and what shoul haapen by the reality
+Environment (Mac)- point the brauser and Operation system
+Severity or Impact-evaluate the sevierence of the problem and it;s impact on the user and the system.
+4.Display the bug ticket strick to the described structure
