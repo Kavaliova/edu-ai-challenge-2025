@@ -1,0 +1,13 @@
+Please perform the following tasks on the provided text:
+Generate a concise and informative summary that captures the main ideas and key meaning of the input text using Extractive Summarization.
+Analyze the sentiment of the text and classify it as one of the following:-positive,-neutral,-negative.
+Assign a sentiment score based on the scale (provide a sentiment score as a decimal number rounded to one decimal place):-1 for very negative sentiment,0 for neutral sentiment,+1 for very positive sentiment.
+Return the results in a JSON format with the following fields:
+
+summary — the concise summary,
+sentiment — the classified sentiment (positive, neutral, or negative),
+sentiment_score — the numerical sentiment score (-1, 0, or 1),
+metadata — an object with additional useful information:
+text length,
+key themes,
+confidence score of the sentiment analysis
