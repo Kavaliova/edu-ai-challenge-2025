@@ -1,0 +1,35 @@
+{
+  "name": "enigma-machine",
+  "version": "1.0.0",
+  "description": "Enigma machine simulator with proper double-stepping implementation",
+  "main": "src/enigma.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "start": "node src/enigma.js"
+  },
+  "keywords": ["enigma", "encryption", "cryptography", "ww2"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "lcov", "html"],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": 60
+      }
+    }
+  }
+} 
